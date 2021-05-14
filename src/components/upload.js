@@ -15,8 +15,8 @@ function Upload() {
         setName(nameRef.current.value)
     }
     function addQuantity(){
-        console.log(quantityRef.current.value)
-        setQuantity(quantityRef.current.value)
+        console.log(Number(quantityRef.current.value))
+        setQuantity(Number(quantityRef.current.value))
     }
     function addPrice(){
         console.log(priceRef.current.value)

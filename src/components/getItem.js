@@ -10,7 +10,7 @@ function GetItem() {
             .then(data => {
                 setItem(data.rec)
             })
-    },[])
+    },[item])
 
     function minus(e){
         let id = e.target.id
@@ -39,6 +39,17 @@ function GetItem() {
     return (
         <div>
             <h1>List</h1>
+            <div className="d-flex">
+                <div className="box">
+                    <h3>Product name</h3>
+                </div>
+                <div className="box">
+                    <h3>Quantity</h3>
+                </div>
+                <div className="box">
+                    <h3>Price one product</h3>
+                </div>
+            </div>
             {item.map((item, index) => <div key={index}  className="d-flex">
                 <div className="box">
                     <h3>{item.name}</h3>
