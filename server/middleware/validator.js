@@ -12,7 +12,12 @@ module.exports = {
         if(name.length > 50){
             return error(true, 'Name is to long')
         }
-
+        if(quantity.length === 0){
+            return error(true, 'write the quantity')
+        }
+        if(price.length === 0){
+            return error(true, 'write the price')
+        }
         next()
     }
 }

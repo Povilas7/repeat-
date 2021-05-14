@@ -8,6 +8,7 @@ function Upload() {
     const [name, setName] = useState([])
     const [quantity, setQuantity] = useState([])
     const [price, setPrice] = useState([])
+    const [error, setError] = useState([])
 
     function addName(){
         console.log(nameRef.current.value)
@@ -38,6 +39,7 @@ function Upload() {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
+                setError(data.message)
             })
 
     }
@@ -54,6 +56,7 @@ function Upload() {
             <div>
                 <button onClick={submit}>Submit</button>
             </div>
+            <p>{error}</p>
         </div>
     );
 }

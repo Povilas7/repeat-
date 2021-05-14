@@ -1,6 +1,5 @@
 .body{
     background-color: #dddddd;
-    height: 95vh;
     width: 98%;
     padding: 20px;
 }
@@ -19,4 +18,71 @@ h3{
 }
 button{
     margin: 15px;
+}
+.d-flex{
+    display: flex;
+}
+.jus-around{
+    justify-content: space-around;
+}
+.name{
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+}
+.quantity{
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+}
+.box{
+    width: 250px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+.box1{
+    width: 250px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+.box1 p{
+    margin: 5px 5px 5px 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+h3{
+    margin: 5px;
+}
+.plus{
+    background-color: green;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+.plus:hover{
+    transform: scale(1.2);
+}
+.delete{
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+.delete:hover{
+    transform: scale(1.1);
+}
+.link{
+    margin: 10px;
+}
+.text{
+    text-decoration: none;
+    color: #4e4e4e;
 }
